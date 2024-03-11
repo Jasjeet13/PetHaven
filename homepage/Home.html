@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetHaven</title>
+    <link rel="icon" href="doglogo.png">
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <div class="logo">
+                <a href="#"><img src="doglogo.png" style="width: 40px;" alt="Company Logo"></a>
+                <a href="#"><h2>PetHaven</h2></a>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <a href="#"><button class="coloured-button">Log In</button></a>
+                <a href="#"><button class="uncolour-button">Sign In</button></a>
+            </nav>
+        </header>
+        <div class="slider-container">
+            <a href="mainpage">
+                <div class="slide" style="background-image: url('slide-image1.jpeg');background-repeat: no-repeat;">
+                    <p class="coloured-text">Unleash Love Adopt a Pet Today!</p>
+                </div>
+            </a>
+            <a href="petproducts">
+                <div class="slide" style="background-image: url('slide-image2.jpg');background-repeat: no-repeat;background-size: cover;">
+                    <p class="coloured-text">Pamper Your Pet Tasty Meals Await!</p>
+                </div>
+            </a>
+            <a href="petcare">
+                <div class="slide" style="background-image: url('petcare.jpg');background-repeat: no-repeat;background-size: cover;">
+                    <p class="coloured-text">Top Tips For Caring for Your Beloved Pet!</p>
+                </div>
+            </a>
+        </div>
+        <div class="vertical-strip"></div>
+        <div id="radio-buttons">
+            <input type="radio" id="radio1" name="slider" checked>
+            <label for="radio1"></label>
+            <input type="radio" id="radio2" name="slider">
+            <label for="radio2"></label>
+            <input type="radio" id="radio3" name="slider">
+            <label for="radio3"></label>
+        </div>
+    </div>
+    <div class="horizontal-strip" onclick="goToMainPage()">
+        <p>Click to explore PetHaven</p>
+    </div>
+    <script src="Home.js"></script>
+</body>
+</html>
